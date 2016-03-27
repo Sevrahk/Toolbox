@@ -23,7 +23,7 @@ gulp.task('scripts', ['clean'], function() {
         .pipe(uglify())
         .pipe(rename('toolbox.min.js'))
         .pipe(insert.prepend(annotation))
-        .pipe(gulp.dest(dest));
+        .pipe(gulp.dest(dest))
         ;
 });
 
